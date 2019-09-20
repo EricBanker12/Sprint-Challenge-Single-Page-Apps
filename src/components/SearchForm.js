@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 export default function SearchForm(props) {
-  const [searchInput, setSearchInput] = useState('')
+  const [searchInput, setSearchInput] = useState("")
 
   function handleInput(e) {
     setSearchInput(e.target.value)
