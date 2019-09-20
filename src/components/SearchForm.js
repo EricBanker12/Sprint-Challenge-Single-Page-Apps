@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 export default function SearchForm(props) {
   const [searchInput, setSearchInput] = useState('')
@@ -21,5 +21,5 @@ export default function SearchForm(props) {
         </label>
       </form>
     </section>
-  );
+  )
 }

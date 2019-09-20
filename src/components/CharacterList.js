@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useEffect, useState } from "react"
+import axios from "axios"
+import "bootstrap/dist/css/bootstrap.min.css"
 
-import SearchForm from "./SearchForm";
-import CharacterCard from "./CharacterCard";
+import SearchForm from "./SearchForm"
+import CharacterCard from "./CharacterCard"
 
 export default function CharacterList() {
   const [address, setAddress] = useState("https://rickandmortyapi.com/api/character/")
@@ -22,7 +22,7 @@ export default function CharacterList() {
         console.error(err)
       })
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, [address]);
+  }, [address])
 
   return (
     <>
@@ -31,5 +31,5 @@ export default function CharacterList() {
         {characterList.map(char => <CharacterCard key={char.id} {...char} />)}
       </section>
     </>
-  );
+  )
 }

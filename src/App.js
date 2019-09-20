@@ -1,9 +1,9 @@
-import React from "react";
-import { Route } from "react-router-dom";
+import React from "react"
+import { Route } from "react-router-dom"
 
-import Header from "./components/Header.js";
-import WelcomePage from "./components/WelcomePage";
-import CharacterList from "./components/CharacterList.js";
+import Header from "./components/Header.js"
+import WelcomePage from "./components/WelcomePage"
+import CharacterList from "./components/CharacterList.js"
 
 export default function App() {
   return (
@@ -12,5 +12,5 @@ export default function App() {
       <Route exact path="/" component={WelcomePage} />
       <Route path="/characters" component={CharacterList} />
     </main>
-  );
+  )
 }
