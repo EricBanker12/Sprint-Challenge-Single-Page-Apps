@@ -1,10 +1,9 @@
 import React from "react";
 import { Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function CharacterCard(props) {
   return (
-    <Card>
+    <Card className="col-sm-3">
       <CardImg src={props.image} alt={props.name} />
       <CardBody>
         <CardTitle>{props.name}</CardTitle>

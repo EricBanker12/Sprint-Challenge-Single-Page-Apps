@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import SearchForm from "./SearchForm";
 import CharacterCard from "./CharacterCard";
@@ -26,7 +27,7 @@ export default function CharacterList() {
   return (
     <>
       <SearchForm search={search} />
-      <section className="character-list">
+      <section className="character-list container row mx-auto">
         {characterList.map(char => <CharacterCard key={char.id} {...char} />)}
       </section>
     </>
